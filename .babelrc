@@ -1,7 +1,3 @@
 {
-    "presets": [
-        "react",
-        "env",
-        "stage-0"
-    ]
+    "presets": ["react-app"]
 }

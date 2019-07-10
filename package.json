@@ -1,32 +1,26 @@
 {
-    "name": "jw-react-npm-boilerplate",
-    "version": "1.0.0",
-    "description": "React Boilerplate Component for npm",
-    "main": "./lib/BoilerplateComponent.js",
-    "license": "MIT",
-    "scripts": {
-        "build": "webpack",
-        "dev": "webpack --watch"
-    },
-    "peerDependencies": {
-        "prop-types": "^15.6.0",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0"
-    },
-    "devDependencies": {
-        "babel-core": "^6.21.0",
-        "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.6.1",
-        "babel-preset-react": "^6.16.0",
-        "babel-preset-stage-0": "^6.24.1",
-        "path": "^0.12.7",
-        "prop-types": "^15.6.0",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "webpack": "^4.5.0",
-        "webpack-cli": "^3.2.1"
-    },
-    "dependencies": {
-        "styled-components": "^4.3.2"
-    }
+  "name": "react-custom-errors",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist"],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build":
+      "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  }
 }
