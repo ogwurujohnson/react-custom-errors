@@ -19,7 +19,7 @@ module.exports = {
   //   }
 
   mode: "development",
-  entry: path.resolve(__dirname, "./src/BoilerplateComponent.jsx"),
+  entry: path.resolve(__dirname, "./src/ErrorPage.jsx"),
   output: {
     path: path.resolve(__dirname, "bundle"),
     filename: "bundle.js"
