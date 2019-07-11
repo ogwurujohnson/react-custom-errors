@@ -1,6 +1,6 @@
 {
   "name": "react-custom-errors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -20,7 +20,12 @@
   },
   "peerDependencies": {
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "prop-types": "^15.7.2",
+    "react-custom-errors": "^1.0.3",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,10 +35,5 @@
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react-custom-errors": "^1.0.0",
-    "react-icons": "^3.7.0",
-    "react-router-dom": "^5.0.1",
-    "styled-components": "^4.3.2"
   }
 }
