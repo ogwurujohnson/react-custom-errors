@@ -39,7 +39,7 @@ export default class ErrorPage extends Component {
               ? this.props.customMessage
               : this.state.message}
           </ErrorMessage>
-          <Link>
+          <Link to={this.props.link}>
             <Button>
               <MdKeyboardBackspace size="2em" /> &nbsp;&nbsp; Go back to
               Homepage
