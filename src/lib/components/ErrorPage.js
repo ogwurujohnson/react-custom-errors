@@ -89,7 +89,7 @@ const ErrorMessage = styled.h3`
 
 const Button = styled.button`
   position: absolute;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: #024c4c;
   color: white;
   border: none;
@@ -97,11 +97,15 @@ const Button = styled.button`
   font-size: 1.4em;
   font-weight: 300;
   text-align: center;
-  top: 55%;
-  left: 50%;
+  top: 8%;
+  left: 13%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  &:focus{
+    outline: none;
+  }
 `;
