@@ -45,7 +45,7 @@ If the developer wishes to customize the error message shown then, they can add 
 
 ```js
 <div>
-    <ErrorPage code="404" customMessage="Gotcha, User not found!"/>
+    <ErrorPage code={404} customMessage="Gotcha... Page not found" link="/home" backgroundColor="brown" />
 </div>
 ```
 
@@ -55,13 +55,15 @@ If the developer wishes to customize the error message shown then, they can add 
 
 |    params    |   value  |             default value            |   description    |
 |:------------:|:--------:|:------------------------------------:|:----------------:|
-|    code      |  string  |               REQUIRED               |   The error code you want displayed on the ErrorPage component                                                                           |
+|    code      |  number  |               REQUIRED               |   The error code you want displayed on the ErrorPage component                                                                           |
 | customMessage|  string  |               NOT REQUIRED           | If provided, the package would make use of it, if not the package would generate the error message itself accurately                          |
+| link  | string | NOT REQUIRED | Provide this prop, which would be a route to where the user would be directed to, if they were to click on the button to go back to dashboard |
+| backgroundColor |string | NOT REQUIRED | If you would love to add more feel and more color customization, to meet your sites theme, you can specify a background color as prop |
 
 
 
 More details can be found in the official site:
- * Site still worked on
+ * Site is still worked on
 
 ## Dev Server
 ```
