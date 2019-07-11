@@ -1,3 +1,3 @@
-import TextInput from "./components/TextInput";
+import ErrorPage from "./components/ErrorPage";
 
-export { TextInput };
+export { ErrorPage };
