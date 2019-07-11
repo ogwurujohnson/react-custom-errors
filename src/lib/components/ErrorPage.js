@@ -16,10 +16,15 @@ export default class ErrorPage extends Component {
   }
 
   static propTypes = {
-    code: PropTypes.string.isRequired,
+    code: PropTypes.number.isRequired,
     customMessage: PropTypes.string,
     backgroundColor: PropTypes.string
   };
+
+  static defaultPropTypes = {
+    customMessage: "Error unknown",
+    backgroundColor: "teal",
+  }
 
   componentDidMount() {
     if (this.props.code) {
@@ -33,7 +38,7 @@ export default class ErrorPage extends Component {
         });
       }
     } else {
-      this.setState({ message: "Error unknown" });
+      this.setState({ message: "!!!!! Please provide a status code as prop for <ErrorPage />, check documentation !!!!!!" });
     }
   }
 
