@@ -54,4 +54,3 @@ export const statusCodes = {
   "507": "Insufficient Storage",
   "511": "Network Authentication Required"
 };
-console.log(statusCodes);
