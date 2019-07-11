@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import {Link, BrowserRouter as Router} from 'react-router-dom';
-import warning from '../assets/warning.svg';
-import {statusCodes} from './data'; 
+import React, { Component } from "react";
+import styled from "styled-components";
+import PropTypes from 'prop-types';
+import { Link, BrowserRouter as Router } from "react-router-dom";
+import warning from "../assets/warning.svg";
+import { statusCodes } from "./data";
 import { MdKeyboardBackspace } from "react-icons/md";
 
 export default class ErrorPage extends Component {
@@ -10,24 +11,34 @@ export default class ErrorPage extends Component {
     super(props);
     this.props = props;
     this.state = {
-      message: '',
-    }
+      message: ""
+    };
   }
 
+  static propTypes = {
+    code: PropTypes.string.isRequired,
+    customMessage: PropTypes.string,
+    backgroundColor: PropTypes.string
+  };
+
   componentDidMount() {
-    if(this.props.code) {
-      if(statusCodes[this.props.code]) {
-        this.setState({message: `Error: ${statusCodes[this.props.code]}`})
+    if (this.props.code) {
+      if (statusCodes[this.props.code]) {
+        this.setState({
+          message: `Error: ${statusCodes[this.props.code]}`
+        });
       } else {
-        this.setState({message: 'Error unknown'})
+        this.setState({
+          message: "Error unknown"
+        });
       }
     } else {
-      this.setState({message: 'Error unknown'})
+      this.setState({ message: "Error unknown" });
     }
   }
 
   // added the custom message prop code when i was taking an ice cream..lol
-  
+
   render(props) {
     return (
       <ErrorWrapper backgroundColor={this.props.backgroundColor}>
@@ -51,11 +62,13 @@ export default class ErrorPage extends Component {
   }
 }
 
-
 const ErrorWrapper = styled.div`
   position: relative;
   text-align: center;
-  ${props => (props.backgroundColor ? `background: ${props.backgroundColor};` : `background: teal;`)}
+  ${props =>
+    props.backgroundColor
+      ? `background: ${props.backgroundColor};`
+      : `background: teal;`}
   color: white;
   min-height: 750px;
   display: flex;
@@ -105,7 +118,7 @@ const Button = styled.button`
   align-items: center;
   cursor: pointer;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 `;
