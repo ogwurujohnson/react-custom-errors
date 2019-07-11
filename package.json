@@ -1,6 +1,6 @@
 {
   "name": "react-custom-errors",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An Error Custom Display Component for React",
   "main": "dist/index.js",
   "module": "dist/index.js",
