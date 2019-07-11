@@ -30,7 +30,7 @@ export default class ErrorPage extends Component {
   
   render(props) {
     return (
-      <ErrorWrapper>
+      <ErrorWrapper backgroundColor={this.props.backgroundColor}>
         <Router>
           <img src={warning} alt="" />
           <ErrorCode>{this.props.code}</ErrorCode>
@@ -55,7 +55,7 @@ export default class ErrorPage extends Component {
 const ErrorWrapper = styled.div`
   position: relative;
   text-align: center;
-  background: teal;
+  ${props => (props.backgroundColor ? `background: ${props.backgroundColor};` : `background: teal;`)}
   color: white;
   min-height: 750px;
   display: flex;
