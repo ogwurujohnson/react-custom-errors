@@ -1,3 +1,3 @@
 import ErrorPage from "./components/ErrorPage";
 
-export { ErrorPage };
+export default ErrorPage;

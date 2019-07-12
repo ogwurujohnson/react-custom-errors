@@ -5,10 +5,10 @@ import ErrorPage from 'react-custom-errors';
 const App = () => (
   <div>
     <ErrorPage
-      code={403}
-      customMessage="hfhfh"
+      code={503}
+      customMessage=""
       link="/yejhhhh"
-      backgroundColor="brown"
+      backgroundColor=""
     />
   </div>
 );

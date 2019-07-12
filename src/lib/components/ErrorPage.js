@@ -5,6 +5,7 @@ import { Link, BrowserRouter as Router } from "react-router-dom";
 import warning from "../assets/warning.svg";
 import { statusCodes } from "./data";
 import { MdKeyboardBackspace } from "react-icons/md";
+import './ErrorPage.css';
 
 export default class ErrorPage extends Component {
   constructor(props) {
@@ -86,6 +87,8 @@ const ErrorWrapper = styled.div`
 
 const ErrorCode = styled.h3`
   position: absolute;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
   font-size: 150px;
   top: 10%;
   left: 50%;
@@ -98,6 +101,7 @@ const ErrorMessage = styled.h3`
   width: 450px;
   word-wrap: break-word;
   position: absolute;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 20px;
   text-align: center;
   top: 40%;
@@ -112,11 +116,12 @@ const Button = styled.button`
   color: white;
   border: none;
   border-radius: 5px;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.4em;
   font-weight: 300;
   text-align: center;
   top: 8%;
-  left: 13%;
+  left: 14%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
