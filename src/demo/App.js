@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorPage from '../lib/components/ErrorPage';
+import ErrorPage from 'react-custom-errors';
 
 
 const App = () => (

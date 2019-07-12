@@ -6633,12 +6633,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-custom-errors@^1.0.2, react-custom-errors@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-custom-errors/-/react-custom-errors-1.0.3.tgz#36301c5e503f7bf6f3aa3c64c38c9e26f8b427b6"
-  integrity sha512-zhom3j0/fMz6nz3uKq0ad+ebPW1uULuMroudKTYYbFPTW7vA1q5nc+y6JhV4uee/TcnAQeYayjCfBJqrbyjorA==
+react-custom-errors@^1.0.7, react-custom-errors@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-custom-errors/-/react-custom-errors-1.0.8.tgz#397d795cb5d4d5ed92ab533162a2fca74f2a3320"
+  integrity sha512-Jct8O23jeSWdqFUvvE2o9N6n0agLhUqaa2BrrRRCFWwCRIhJtJd5zvrbWSVVMY12Z7/svB/MTDRGmY/H8WsuZQ==
   dependencies:
-    react-custom-errors "^1.0.2"
+    react-custom-errors "^1.0.7"
+    react-icons "^3.7.0"
 
 react-dev-utils@^5.0.1:
   version "5.0.3"
