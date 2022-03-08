@@ -6633,14 +6633,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-custom-errors@^1.0.7, react-custom-errors@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/react-custom-errors/-/react-custom-errors-1.0.8.tgz#397d795cb5d4d5ed92ab533162a2fca74f2a3320"
-  integrity sha512-Jct8O23jeSWdqFUvvE2o9N6n0agLhUqaa2BrrRRCFWwCRIhJtJd5zvrbWSVVMY12Z7/svB/MTDRGmY/H8WsuZQ==
-  dependencies:
-    react-custom-errors "^1.0.7"
-    react-icons "^3.7.0"
-
 react-dev-utils@^5.0.1:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.3.tgz#92f97668f03deb09d7fa11ea288832a8c756e35e"
@@ -8151,9 +8143,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 urijs@^1.16.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
-  integrity sha512-xVrGVi94ueCJNrBSTjWqjvtgvl3cyOTThp2zaMaFNGp3F542TR6sM3f2o8RqZl+AwteClSVmoCyt0ka4RjQOQg==
+  version "1.19.10"
+  resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.10.tgz#8e2fe70a8192845c180f75074884278f1eea26cb"
+  integrity sha512-EzauQlgKuJgsXOqoMrCiePBf4At5jVqRhXykF3Wfb8ZsOBMxPcfiVBcsHXug4Aepb/ICm2PIgqAUGMelgdrWEg==
 
 urix@^0.1.0:
   version "0.1.0"
